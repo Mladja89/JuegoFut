@@ -100,7 +100,7 @@ body {
 
 .top-center {
 	/*background-image: url(https://www.dropbox.com/s/i25yvbej4t8q0qc/logofull.png?raw=1);*/
-    background-image: url("/img/logofull.png");
+    background-image: url("../img/logofull.png");
     width: 320px;
     background-size: contain;
     background-repeat: no-repeat;
