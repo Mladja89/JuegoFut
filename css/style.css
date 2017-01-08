@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'mladja';
+  src: url('/fonts/mladja.ttf');
+}
+
 .noselect {
   -webkit-touch-callout: none !important; /* iOS Safari */
     -webkit-user-select: none !important; /* Chrome/Safari/Opera */
@@ -11,15 +16,26 @@
 body {
 	margin: 0;
 	padding: 0;
+    width: 100%;
+}
+
+.body-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
 }
 
 .header {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100%;
-    background-image: url(https://www.dropbox.com/s/x3tbkyyavl8lm5r/bannerBg.jpg?raw=1);
+    /*height: 100%;*/
+    /*background-image: url(https://www.dropbox.com/s/x3tbkyyavl8lm5r/bannerBg.jpg?raw=1);*/
+    background-image: url("/img/bannerBg.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: 50%;
 }
 
 .header-top {
@@ -29,7 +45,6 @@ body {
     width: 100%;
     margin-top: 50px;
     justify-content: center;
-
 }
 
 .top-left {
@@ -84,7 +99,8 @@ body {
 }
 
 .top-center {
-	background-image: url(https://www.dropbox.com/s/i25yvbej4t8q0qc/logofull.png?raw=1);
+	/*background-image: url(https://www.dropbox.com/s/i25yvbej4t8q0qc/logofull.png?raw=1);*/
+    background-image: url("/img/logofull.png");
     width: 320px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -132,7 +148,8 @@ body {
     outline: none;
     /* display: flex; */
     /* position: absolute; */
-    background-image: url(https://www.dropbox.com/s/qyalqdalenc2sac/usaFlag.png?raw=1);
+    /*background-image: url(https://www.dropbox.com/s/qyalqdalenc2sac/usaFlag.png?raw=1);*/
+    background-image: url("/img/usaFlag.png");
     background-repeat: no-repeat;
     background-position: 5px 50%;
 }
@@ -140,4 +157,144 @@ body {
 select option {
 	background: rgb(22, 86, 148);
     color: white;
+}
+
+.header-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.bottom1 {
+    font-family: "mladja";
+    font-size: 45px;
+    color: #eee727;
+    margin-bottom: 40px;
+}
+
+.bottom1 span {
+    color: white !important;
+}
+
+.banner-area {
+    position: relative;
+    /* display: flex; */
+    width: 100%;
+    height: 40vh;
+    background: rgba(255, 255, 255, 0.00);
+}
+
+.field-noshaddow {
+    position: absolute;
+    z-index: 5;
+    background-image: url(/img/fieldNoShadow.png);
+    width: 100%;
+    height: inherit;
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+    background-size: contain;
+}
+
+.field-shaddow {
+    position: absolute;
+    z-index: 3;
+    background-image: url(/img/fieldShadow.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: inherit;
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+    background-size: contain;
+}
+
+.bottom3 {
+    font-family: Raleway;
+    color: white;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+display: flex;
+    border-top: 1px solid #3687c1;
+    border-bottom: 1px solid #3687c1;
+    padding-top: 3px;
+    padding-bottom: 10px;
+    font-family: "mladja";
+    font-size: 45px;
+    color: #eee727;
+    width: 100%;
+    justify-content: center;
+    background: #276398;
+    background: -moz-linear-gradient(top, #276398 0%, #205584 100%);
+    background: -webkit-linear-gradient(top, #276398 0%,#205584 100%);
+    background: linear-gradient(to bottom, #276398 0%,#205584 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#276398', endColorstr='#205584',GradientType=0 );
+}
+
+.main-content-bg {
+    background: #1971b6;
+    background: -moz-linear-gradient(top, #1971b6 0%, #11518d 100%);
+    background: -webkit-linear-gradient(top, #1971b6 0%,#11518d 100%);
+    background: linear-gradient(to bottom, #1971b6 0%,#11518d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1971b6', endColorstr='#11518d',GradientType=0 );
+}
+
+
+.leagues-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.leage {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background: #5a5a5a;
+}
+
+.leage-title {
+    display: flex;
+    background: #24272c;
+    justify-content: center;
+    padding-bottom: 12px;
+    padding-top: 4px;
+}
+
+.abrevation {
+    font-family: "mladja";
+    font-size: 35px;
+    color: #eee727;
+    margin-right: auto;
+    margin-left: 12px;
+}
+
+.leage-name {
+    font-family: "mladja";
+    font-size: 35px;
+    margin-right: auto;
+    color: #eee727;
+}
+
+.leage-list {
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.footer {
+    display: flex;
 }
