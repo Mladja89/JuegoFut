@@ -1,0 +1,143 @@
+.noselect {
+  -webkit-touch-callout: none !important; /* iOS Safari */
+    -webkit-user-select: none !important; /* Chrome/Safari/Opera */
+     -khtml-user-select: none !important; /* Konqueror */
+       -moz-user-select: none !important; /* Firefox */
+        -ms-user-select: none !important; /* Internet Explorer/Edge */
+            user-select: none !important; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.dropbox.com/s/x3tbkyyavl8lm5r/bannerBg.jpg?raw=1);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header-top {
+    display: flex;
+    background: rgba(165, 42, 42, 0);
+    height: 80px;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: center;
+
+}
+
+.top-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: calc(50% - 160px);
+    padding-right: 40px;
+}
+
+.white-line {
+	height: 1px;
+    background: white;
+    width: 100%;
+}
+
+.left1 {
+    flex-direction: row-reverse;
+    display: flex;
+    width: 100%;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2;
+}
+
+.left-wrapper {
+	display: flex;
+	cursor: pointer;
+}
+
+.left1 div, .left1 span {
+	margin-left: 10px;
+}
+
+.left-wrapper div:hover {
+	color: yellow;
+}
+
+.left1 span {
+	line-height: 0.7;
+}
+
+.left2 {
+
+}
+
+.Left3 {
+
+}
+
+.top-center {
+	background-image: url(https://www.dropbox.com/s/i25yvbej4t8q0qc/logofull.png?raw=1);
+    width: 320px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.top-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: calc(50% - 160px);
+    padding-left: 40px;
+}
+
+.right1 {
+	display: flex;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2;
+    cursor: pointer;
+}
+
+.right1 span {
+	padding-left: 4px;
+    padding-right: 4px;
+}
+
+.right1 div:hover {
+	color: yellow;
+}
+
+.country-select select {
+	width: 150px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 30px;
+    padding-right: 5px;
+    color: white;
+    outline: none;
+    /* display: flex; */
+    /* position: absolute; */
+    background-image: url(https://www.dropbox.com/s/qyalqdalenc2sac/usaFlag.png?raw=1);
+    background-repeat: no-repeat;
+    background-position: 5px 50%;
+}
+
+select option {
+	background: rgb(22, 86, 148);
+    color: white;
+}
