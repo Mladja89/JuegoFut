@@ -149,7 +149,7 @@ body {
     /* display: flex; */
     /* position: absolute; */
     /*background-image: url(https://www.dropbox.com/s/qyalqdalenc2sac/usaFlag.png?raw=1);*/
-    background-image: url("/img/usaFlag.png");
+    background-image: url("../img/usaFlag.png");
     background-repeat: no-repeat;
     background-position: 5px 50%;
 }
@@ -189,7 +189,7 @@ select option {
 .field-noshaddow {
     position: absolute;
     z-index: 5;
-    background-image: url(/img/fieldNoShadow.png);
+    background-image: url("../img/fieldNoShadow.png");
     width: 100%;
     height: inherit;
     background-repeat: no-repeat;
@@ -200,7 +200,7 @@ select option {
 .field-shaddow {
     position: absolute;
     z-index: 3;
-    background-image: url(/img/fieldShadow.png);
+    background-image: url("../img/fieldShadow.png");
     background-repeat: no-repeat;
     width: 100%;
     height: inherit;
