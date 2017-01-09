@@ -3,15 +3,48 @@ var app = angular.module("JuegoWebsite", []);
 app.controller('JuegoController', function($scope, $rootScope) {
 	$scope.arizona = [
 		{leagueName:'Arizona', age:25, abrevation:'AZ'},
-    	{name:'John', age:25, gender:'boy'},
-    	{name:'Jessie', age:30, gender:'girl'},
-    	{name:'Johanna', age:28, gender:'girl'},
-    	{name:'Joy', age:15, gender:'girl'},
-    	{name:'Mary', age:28, gender:'girl'},
-    	{name:'Peter', age:95, gender:'boy'},
-    	{name:'Sebastian', age:50, gender:'boy'},
-    	{name:'Erika', age:27, gender:'girl'},
-    	{name:'Patrick', age:40, gender:'boy'},
-    	{name:'Samantha', age:60, gender:'girl'}
+		{name:"Arizona Women's Soccer League "},
+		{name:"Fair Play USA Soccer League "},
+		{name:"Liga Coed de Tucson "},
+		{name:"Liga Hispana La Union "},
+		{name:"Liga Hispana La Union Infantil"}
     ];
+    $scope.arkansas = [
+		{leagueName:'arkansas', age:25, abrevation:'AR'},
+		{name:"Liga de Fútbol MexArk"}
+    ];
+    $scope.california = [
+		{leagueName:'california', age:25, abrevation:'CA'},
+		{name:"American Union Soccer League"},
+		{name:"Bakersville Soccer League"},
+		{name:"Central Valley Youth Soccer League"},
+		{name:"Contra Costa Futsal"},
+		{name:"Kickers Indoor Soccer"},
+		{name:"McCulloch Stars Soccer League"},
+		{name:"Wilmington Interclub"},
+		{name:"Winchester Soccer League de San Jose"}
+    ];
+    $scope.delaware = [
+		{leagueName:'delaware', age:25, abrevation:'DE'},
+		{name:"AFL"},
+		{name:"La Bombonera Soccer League"},
+		{name:"Liga Atexcac"},
+		{name:"Liga Nueva Acción de Futbol Siete"},
+		{name:"Liga Premier Infantil"}
+    ];
+
+    
+	
+	
+	
+	
+	
+	
+	
+
 });
+
+
+
+
+

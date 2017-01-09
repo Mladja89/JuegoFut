@@ -3,6 +3,26 @@
   src: url("../fonts/mladja.TTF");
 }
 
+@font-face {
+  font-family: "BebBold";
+  src: url("../fonts/BebBold.otf");
+}
+
+@font-face {
+  font-family: "BebBook";
+  src: url("../fonts/BebBook.otf");
+}
+
+@font-face {
+  font-family: "BebLight";
+  src: url("../fonts/BebLight.otf");
+}
+
+@font-face {
+  font-family: "BebRegular";
+  src: url("../fonts/BebRegular.otf");
+}
+
 .noselect {
   -webkit-touch-callout: none !important; /* iOS Safari */
     -webkit-user-select: none !important; /* Chrome/Safari/Opera */
@@ -195,6 +215,12 @@ select option {
     background-repeat: no-repeat;
     background-position: 50% 0px;
     background-size: contain;
+
+    animation-name: field-up;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
 }
 
 .field-shaddow {
@@ -207,6 +233,31 @@ select option {
     background-repeat: no-repeat;
     background-position: 50% 0px;
     background-size: contain;
+    filter: blur(0px);
+
+    animation-name: field-down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes field-up {
+    0% {
+        background-position: 50% 0px;;
+    }
+    100% {
+        background-position: 50% -20px;;
+    }
+}
+
+@keyframes field-down {
+    0% {
+        filter: blur(0px);
+    }
+    100% {
+        filter: blur(25px);
+    }
 }
 
 .bottom3 {
@@ -263,25 +314,49 @@ display: flex;
     background: #5a5a5a;
 }
 
+.first-leage {
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+}
+
+.last-leage {
+    border-radius: 0 0 6px 6px;
+    overflow: hidden;
+}
+
 .leage-title {
     display: flex;
     background: #24272c;
     justify-content: center;
-    padding-bottom: 12px;
-    padding-top: 4px;
+    padding-bottom: 9px;
+    padding-top: 5px;
+    padding-right: 35px;
 }
 
 .abrevation {
-    font-family: "mladja";
-    font-size: 35px;
+    font-family: "Raleway";
+    position: relative;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.7;
     color: #eee727;
     margin-right: auto;
     margin-left: 12px;
 }
 
+.abrevation:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    right: -9px;
+    top: 10px;
+    background: #eee727;
+}
+
 .leage-name {
     font-family: "mladja";
-    font-size: 35px;
+    font-size: 38px;
     margin-right: auto;
     color: #eee727;
 }
@@ -293,8 +368,33 @@ display: flex;
     align-items: center;
 }
 
+.leage-indi {
+    color: rgba(63, 66, 71, 0.52);
+    text-transform: uppercase;
+    font-size: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    border-top: 1px solid white;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: "BebRegular";
+    letter-spacing: 0.7;
+    cursor: pointer;
+}
+
+.leage-indi:hover {
+    background: white;
+}
+
 
 
 .footer {
     display: flex;
+}
+
+.footer-wrapper {
+    background: #24272c;
+    display: flex;
+    flex-direction: column;
 }

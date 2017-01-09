@@ -68,13 +68,43 @@
         <div class="top-bar">LEAGUES</div>
         <div class="main-content-bg">
             <div class="leagues-wrapper">
-                <div class="leage">
+                <div class="leage first-leage">
                     <div class="leage-title">
-                        <div class="abrevation">AZ</div>
-                        <div class="leage-name">LeageName</div>
+                        <div class="abrevation">{{arizona[0].abrevation}}</div>
+                        <div class="leage-name">{{arizona[0].leagueName}}</div>
                     </div>
                     <div class="leage-list">
-                        <div ng-repeat="league in arizona" class="leage-indi">{{league.name}}</div>
+                        <div ng-repeat="league in arizona" ng-if="$index > 0" class="leage-indi">{{league.name}}</div>
+                    </div>
+                    
+                </div>
+                <div class="leage">
+                    <div class="leage-title">
+                        <div class="abrevation">{{arkansas[0].abrevation}}</div>
+                        <div class="leage-name">{{arkansas[0].leagueName}}</div>
+                    </div>
+                    <div class="leage-list">
+                        <div ng-repeat="league in arkansas" ng-if="$index > 0" class="leage-indi">{{league.name}}</div>
+                    </div>
+                    
+                </div>
+                <div class="leage">
+                    <div class="leage-title">
+                        <div class="abrevation">{{california[0].abrevation}}</div>
+                        <div class="leage-name">{{california[0].leagueName}}</div>
+                    </div>
+                    <div class="leage-list">
+                        <div ng-repeat="league in california" ng-if="$index > 0" class="leage-indi">{{league.name}}</div>
+                    </div>
+                    
+                </div>
+                <div class="leage last-leage">
+                    <div class="leage-title">
+                        <div class="abrevation">{{delaware[0].abrevation}}</div>
+                        <div class="leage-name">{{delaware[0].leagueName}}</div>
+                    </div>
+                    <div class="leage-list">
+                        <div ng-repeat="league in delaware" ng-if="$index > 0" class="leage-indi">{{league.name}}</div>
                     </div>
                     
                 </div>
@@ -82,7 +112,24 @@
         </div>
     </div>
     <div class="footer">
-        
+        <div class="footer-wrapper">
+            <div class="footer-elements">
+                <div class="foo1">
+                    <div>HOME</div>
+                    <div class="yellow-line"></div>
+                    <div>ABOUT</div>
+                </div>
+                <div class="foo2">
+                    <div class="logoBW"></div>
+                </div>
+                <div class="foo3">
+                    <div></div>
+                    <div class="yellow-line"></div>
+                    <div>CONTACT</div>
+                </div>
+            </div>
+            <div class="all-rights">©2016 JUEGOFUT, INC. ALL RIGHTS RESERVED.</div>
+        </div>
     </div>
 </div>
 
